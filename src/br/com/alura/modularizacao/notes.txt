@@ -1,3 +1,5 @@
+repo: https://github.com/DeveloperArthur/monolito-modular
+
 por exemplo, vamos supor que eu tenha um app com 3 pacotes:
 - dominio
 - http
