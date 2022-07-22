@@ -1,0 +1,22 @@
+por exemplo, vamos supor que eu tenha um app com 3 pacotes:
+- dominio
+- http
+- nota-fiscal
+
+basicamente a modulazicacao seria criar 3 projetos java distintos para cada pacote
+no curso o professor criou esses 3 projetos dentro de um unico working set (nao sei se precisa ser assim)
+
+(working set no Eclipse servem para construir um subconjunto de projetos de um espaço de trabalho)
+Não há um working set equivalente no IntelliJ IDEA
+mas existe um recurso chamado scope no IntelliJ, no qual você pode definir um subconjunto de pastas do seu projeto.
+
+mas obviamente , só fazer isso nao vai funcionar, mas com esse recurso do java, podemos utilizar assim
+
+o proprio java vai entender que esses projetos sao modulos, para isso é necessário
+ter um arquivo chamado module-info com o conteudo:
+
+module br.com.alura.dominio {
+    exports br.com.alura.dominio;
+}
+
+dessa forma vc consegue utilizar as classes desse modulo em outros
